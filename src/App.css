@@ -1,0 +1,41 @@
+[class^='rangeslider'] {
+  margin: unset;
+  border-radius: 0;
+}
+
+
+[class^='rangeslider'] .rangeslider__fill{
+  background-color: #903325;
+  border-radius: 0;
+}
+
+[class^='rangeslider'] .rangeslider__handle{
+  position: relative;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+[class^='rangeslider'] .rangeslider__handle:before {
+  content: '';
+  background-image: url('/watermelon.png');
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  left: 50%; transform: translateX(-50%);
+  top: -5px;
+  outline: none;
+  background-position: 0 -20px;
+  position: absolute;
+}
+
+.rangeslider-horizontal .rangeslider__handle:before{
+  top: 0;
+}
+
+
+[class^='rangeslider'] .rangeslider__handle:after {
+  display: none;
+}
